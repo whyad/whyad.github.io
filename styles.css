@@ -1,3 +1,32 @@
 h1{
 	font-family: "VT23";
+	padding-top: 25vh;
+}
+
+body{
+	font-family: "PT Sans";
+	font-size: 12px;
+}
+
+
+@keyframes blinx{
+	from {opacity: 0.05;}
+	to{opacity: 1;}
+}
+
+#sowilo{
+	cursor: pointer;
+	opacity: 0.05;
+	animation-name: blinx;
+	animation-duration: 1.5s;
+	animation-timing-function: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	animation-iteration-count: infinite;
+}
+
+#more-info{
+	display: none;
+}
+
+.show-info{
+	display: inline;
 }
