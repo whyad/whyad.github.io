@@ -1,11 +1,13 @@
 h1{
 	font-family: "VT23";
 	padding-top: 25vh;
+  cursor: default;
 }
 
 body{
 	font-family: "PT Sans";
 	font-size: 12px;
+  cursor: default;
 }
 
 
@@ -15,7 +17,6 @@ body{
 }
 
 #sowilo{
-	cursor: pointer;
 	opacity: 0.05;
 	animation-name: blinx;
 	animation-duration: 1.5s;
@@ -23,6 +24,46 @@ body{
 	animation-iteration-count: infinite;
 }
 
-#more-info{
-	display: none;
+#sw-button{
+  cursor: pointer;
+}
+
+@keyframes fade-in{
+	from {opacity: 0;}
+	to{opacity: 1;}
+}
+
+@keyframes fade-out{
+	from {opacity: 1;}
+	to{opacity: 0;}
+}
+
+.hide-info{
+  display: none;
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 1.5s;
+	animation-timing-function: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* it doesn't fade out slowly for some reason */
+
+.show-info{
+  display: inline;
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+	animation-timing-function: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.rot{
+  transform: rotate(30deg);
+  transition: transform 0.5s;
+  transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+}
+
+.rot-back{
+  transform: rotate(-30deg);
+  transition: transform 0.5s;
+  transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
 }
