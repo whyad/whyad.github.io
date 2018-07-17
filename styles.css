@@ -15,6 +15,7 @@ body{
 #info{
   margin: 0;
   width: 30vw;
+  overflow: hidden;
 }
 
 #basic-info{
@@ -62,9 +63,9 @@ body{
   transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
 }
 
-/*.move-down{
+.move-down{
   padding-top: 3px;
-}*/
+}
 
 #mail-me{
   cursor: pointer;
