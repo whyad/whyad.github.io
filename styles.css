@@ -45,7 +45,6 @@ body{
 }
 
 .show-info{
-  margin-top: 5px;
   height: 10px;
   opacity: 1;
   transition: all 0.5s ease; 
