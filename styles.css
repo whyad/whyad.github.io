@@ -45,7 +45,7 @@ body{
 }
 
 .show-info{
-  height: 10px;
+  height: 45px;
   opacity: 1;
   transition: all 0.5s ease; 
 }
@@ -62,9 +62,9 @@ body{
   transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
 }
 
-.move-down{
-  padding-top: 3%;
-}
+/*.move-down{
+  padding-top: 3px;
+}*/
 
 #mail-me{
   cursor: pointer;
