@@ -39,12 +39,14 @@ body{
 }
 
 .hide-info{
+  margin-top: 0;
   height: 0;
   opacity: 0;
   transition: all 0.5s ease;
 }
 
 .show-info{
+  margin-top: 5px;
   height: 10px;
   opacity: 1;
   transition: all 0.5s ease; 
@@ -63,10 +65,11 @@ body{
 }
 
 .move-down{
-  padding-top: 3%;
+  padding-top: 8px;
 }
 
 #mail-me{
   cursor: pointer;
 }
+
 
