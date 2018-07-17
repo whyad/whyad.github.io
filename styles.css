@@ -63,11 +63,9 @@ body{
 }
 
 .move-down{
-  padding-top: 8px;
+  padding-top: 3%;
 }
 
 #mail-me{
   cursor: pointer;
 }
-
-
