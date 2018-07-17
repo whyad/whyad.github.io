@@ -1,59 +1,53 @@
 h1{
-	font-family: "VT23";
-	padding-top: 25vh;
+  font-family: "VT23";
+  padding-top: 25vh;
   cursor: default;
 }
 
 body{
-	font-family: "PT Sans";
-	font-size: 12px;
+  font-family: "PT Sans";
+  font-size: 12px;
   cursor: default;
 }
 
+.material-icons.md-18 { font-size: 18px; }
+
+#info{
+  margin: 0;
+  width: 30vw;
+}
+
+#basic-info{
+  margin: 10px;
+}
 
 @keyframes blinx{
-	from {opacity: 0.05;}
-	to{opacity: 1;}
+  from {opacity: 0.05;}
+  to{opacity: 1;}
 }
 
 #sowilo{
-	opacity: 0.05;
-	animation-name: blinx;
-	animation-duration: 1.5s;
-	animation-timing-function: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-	animation-iteration-count: infinite;
+  opacity: 0.05;
+  animation-name: blinx;
+  animation-duration: 1.5s;
+  animation-timing-function: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-iteration-count: infinite;
 }
 
 #sw-button{
   cursor: pointer;
 }
 
-@keyframes fade-in{
-	from {opacity: 0;}
-	to{opacity: 1;}
-}
-
-@keyframes fade-out{
-	from {opacity: 1;}
-	to{opacity: 0;}
-}
-
 .hide-info{
-  display: none;
+  height: 0;
   opacity: 0;
-  animation-name: fade-out;
-  animation-duration: 1.5s;
-	animation-timing-function: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.5s ease;
 }
-
-/* it doesn't fade out slowly for some reason */
 
 .show-info{
-  display: inline;
+  height: 10px;
   opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 1.5s;
-	animation-timing-function: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.5s ease; 
 }
 
 .rot{
@@ -66,4 +60,51 @@ body{
   transform: rotate(-30deg);
   transition: transform 0.5s;
   transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+}
+
+.move-down{
+  padding-top: 3%;
+}
+
+#mail-me{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px){
+  #info{
+    margin: 0;
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 940px){
+  #info{
+    margin: 0;
+    width: 65vw;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  #info{
+    margin: 0;
+    width: 85vw;
+  }
+}
+
+
+@media screen and (max-width: 445px){
+  #info{
+    margin: 0;
+    width: 100vw;
+  }
+}
+
+
+@media screen and (max-width: 385px){ #info{
+    margin: 0;
+    width: 95vw;
+  }
+.move-down{
+  padding-top: 8%;
 }
